@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Exemplo HTML, CSS e DOM</title>
+
+
+
+
+   <style>
+       body {
+           margin: 0;
+           font-family: Arial, sans-serif;
+       }
+
+
+       header {
+           background-color: lightblue;
+           padding: 20px;
+       }
+
+
+       nav {
+           background-color: lightgray;
+           padding: 15px;
+       }
+
+
+       main {
+           background-color: white;
+           padding: 20px;
+           min-height: 200px;
+       }
+
+
+   </style>
+
+
+</head>
+
+
+
+
+<body>
+
+
+
+
+   <header>
+       <h1>Meu Site</h1>
+   </header>
+
+
+   <nav>
+       <a href="#">Início</a>
+       <a href="#">Sobre</a>
+       <a href="#">Contato</a>
+   </nav>
+
+
+   <main id="conteudo">
+       <!-- O JavaScript criará os elementos aqui -->
+   </main>
+
+
+
+
+
+
+   <script>
+       // Selecionar o elemento main
+       const main = document.getElementById("conteudo");
+
+
+
+
+       // CRIAR UM TÍTULO
+       const titulo = document.createElement("h1");
+       titulo.textContent = "Cataratas do Iguaçu";
+       main.appendChild(titulo);
+
+
+
+
+       // CRIAR UM PARÁGRAFO
+       const paragrafo1 = document.createElement("p");
+       paragrafo1.textContent = "Formam o maior conjunto de quedas d'água do mundo, localizado na fronteira entre o Brasil e a Argentina.";
+       main.appendChild(paragrafo1);
+
+
+
+
+       const paragrafo2 = document.createElement("p");
+       paragrafo2.textContent = "Sendo 275 quedas ao longo de 2,7 km no Rio Iguaçu, com alturas que chegam a 82 metros";
+       main.appendChild(paragrafo2);
+
+
+      
+      
+       const img = document.createElement('img');
+
+
+img.src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXF_mrfdPg_Yv_trirEVxZNQGSlwe_f4Jh2t4cWKjyPoXkaYDa72bUGfs&s=10';
+img.alt = 'Descrição da imagem para acessibilidade';
+img.width = 500;
+
+
+const container = document.getElementById('meu-container');
+
+
+conteudo.appendChild(img);
+
+
+       conteudo.style.backgroundColor = "lightGray"
+       conteudo.style.textAlign = "center"
+
+   </script>
+
+
+</body>
+</html>
